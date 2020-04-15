@@ -10,6 +10,10 @@ package nguyenhoanganhtien_59136132_baitap1;
  * @author PC
  */
 public class GiaoVien extends CaNhan  {
+
+    static int size() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     String MonDay;
     String ToBoMon;
 
@@ -36,6 +40,10 @@ public class GiaoVien extends CaNhan  {
         "MonDay:"+MonDay+"\n"+
         "ToBoMon:"+ToBoMon+"\n";
                 
+    }
+
+    void add(GiaoVien GV) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
    
 }
