@@ -10,7 +10,7 @@ package nguyenhoanganhtien_59136132_baitap1;
  * @author PC
  */
 public interface IQLDS {
-     int Them(CaNhan p);
-     int Xoa(String ten);
+     int them(CaNhan p);
+     int xoa(String ten);
      void inDS();    
 }

@@ -10,10 +10,10 @@ package nguyenhoanganhtien_59136132_baitap1;
  * @author PC
  */
 public abstract class CaNhan {
-     String HoTen;
-     int Tuoi;
-     String DiaChi;
-     String Sdt;
+    private String HoTen;
+    private int Tuoi;
+    private String DiaChi;
+    private String Sdt;
 
     public CaNhan(String HoTen, int Tuoi, String DiaChi, String Sdt) {
         this.HoTen = HoTen;
@@ -25,7 +25,7 @@ public abstract class CaNhan {
     public String getHoTen() {
         return HoTen;
     }
-
+    
     public int getTuoi() {
         return Tuoi;
     }

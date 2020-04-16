@@ -11,15 +11,8 @@ package nguyenhoanganhtien_59136132_baitap1;
  */
 public class HocSinh extends CaNhan{
 
-    static int size() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    static void add(HocSinh HS) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    String Lop;
-    String NangKhieu;
+    private String Lop;
+    private String NangKhieu;
 
 
     public HocSinh(String Lop, String NangKhieu, String HoTen, int Tuoi, String DiaChi, String Sdt) {
@@ -27,23 +20,7 @@ public class HocSinh extends CaNhan{
         this.Lop = Lop;
         this.NangKhieu = NangKhieu;
     }
-
-    public String getLop() {
-        return Lop;
-    }
-
-    public String getNangKhieu() {
-        return NangKhieu;
-    }
-
-    public void setLop(String Lop) {
-        this.Lop = Lop;
-    }
-
-    public void setNangKhieu(String NangKhieu) {
-        this.NangKhieu = NangKhieu;
-    }
-
+    
     @Override
     public String HienThiTT() {
         return super.HienThiTT() + //To change body of generated methods, choose Tools | Templates.

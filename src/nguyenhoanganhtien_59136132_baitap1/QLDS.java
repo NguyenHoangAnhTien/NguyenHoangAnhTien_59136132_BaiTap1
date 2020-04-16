@@ -6,34 +6,35 @@
 package nguyenhoanganhtien_59136132_baitap1;
 
 import java.util.ArrayList;
-
+import java.util.List;
 /**
  *
- * @author PC
+ * @author ltpnt
  */
 public class QLDS implements IQLDS{
-     ArrayList <CaNhan> DS = new ArrayList<>();
+    private final List<CaNhan> CaNhan = new ArrayList<>();
 
     @Override
-    public int Them(CaNhan p) {
-          DS.add(p);
-         return 1;
+    public int them(CaNhan p) {
+        CaNhan.add(p);
+        return 0;
     }
 
     @Override
-    public int Xoa(String ten) {
-         DS.removeIf( i -> i.getHoTen().equals(ten) );
-         boolean DSRemoved = false;
-         if(DSRemoved) return 1;
-         return 0;
-         
+    public int xoa(String ten) {
+        for(CaNhan caNhan: CaNhan) {
+            if(caNhan.getHoTen().equals(ten)) {
+                CaNhan.remove(caNhan);
+            }
+        }
+        return 0;
     }
 
     @Override
     public void inDS() {
-       for (int i = 0; i < DS.size(); i++){
-            System.out.println(DS.get(i).HienThiTT());
+        for(CaNhan caNhan: CaNhan) {
+           caNhan.HienThiTT();
+       }
     }
-    }
-    
+
 }

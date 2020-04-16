@@ -6,6 +6,7 @@
 package nguyenhoanganhtien_59136132_baitap1;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -14,35 +15,37 @@ import java.util.ArrayList;
 public class LopHoc {
    ArrayList<HocSinh> DSHS = new ArrayList<>();
    ArrayList<GiaoVien> DSGV = new ArrayList<>();
-   ArrayList<QLDS> QLDS = new ArrayList<>();
+   
 
-    LopHoc(GiaoVien gvcn) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
    
    
 public int ThemHocSinh(HocSinh hs){        
         DSHS.add(hs);
-        return HocSinh.size();
+        return 0;
     }
    
    public int ThemGVGD(GiaoVien GV){
         DSGV.add(GV);
-        return GiaoVien.size();
+        return 0;
     }
-      public void inDSHS(ArrayList<CaNhan> HS){
-        for (int i = 0; i< DSHS.size(); i++)
-        {
-            System.out.println(DSHS.get(i).HienThiTT());
+       public int inDSHS() {
+        int t = 0;
+        System.out.println("Danh sách học sinh:");
+        for(HocSinh hs: DSHS) {
+            System.out.println(hs.HienThiTT());
+            t = t + 1;
         }
-       
+        return t;
     }
-    public void inDSGVGD(ArrayList<CaNhan> GV){
-           for (int i = 0; i< DSGV.size(); i++)
-        {
-            System.out.println(DSGV.get(i).HienThiTT());
+    public int inDSGVGD() {
+        int t = 0;
+        System.out.println("Danh sách giáo viên giảng dạy:");
+        for(GiaoVien giaoVien: DSGV) {
+            System.out.println(giaoVien.HienThiTT());
+            t = t + 1;
         }
-      
-    }
+        return t;
 
+}
 }
